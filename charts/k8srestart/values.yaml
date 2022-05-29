@@ -1,0 +1,70 @@
+# Default values for k8srestart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+image:
+  # image.repository -- k8srestart image repository
+  repository: ghcr.io/stenic/k8srestart
+  # image.pullPolicy -- k8srestart image pullPolicy
+  pullPolicy: Always
+  # image.tag -- k8srestart image tag (immutable tags are recommended)
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+
+k8srestart:
+  # k8srestart.interval -- Poll interval for readiness checks
+  interval: 30
+
+# imagePullSecrets -- Docker registry secret names as an array
+imagePullSecrets: []
+# nameOverride -- String to partially override fullname
+nameOverride: ""
+# fullnameOverride -- String to fully override fullname
+fullnameOverride: ""
+
+serviceAccount:
+  # serviceAccount.create -- Specifies whether a ServiceAccount should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # serviceAccount.name -- The name of the ServiceAccount to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+# podAnnotations -- Additional annotations for the pods.
+podAnnotations: {}
+
+# podSecurityContext -- Enable Controller pods' Security Context
+podSecurityContext: {}
+  # fsGroup: 2000
+
+# securityContext -- Enable Controller containers' Security Context
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+# resources -- Resource requests and limits for the controller
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+# nodeSelector -- Node labels for controller pod assignment
+nodeSelector: {}
+
+# affinity -- Affinity and anti-affinity
+affinity: {}
+
+# tolerations -- Node tolerations for server scheduling to nodes with taints
+tolerations: []
