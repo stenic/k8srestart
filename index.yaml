@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  k8srestart:
+  - apiVersion: v2
+    appVersion: 1.0.1
+    created: "2022-05-29T18:01:20.555149938Z"
+    description: A Helm chart for Kubernetes
+    digest: 716a0c413eda66291194dcfecbc1157378081cd196390ee24bce5791a4bea4a2
+    name: k8srestart
+    type: application
+    urls:
+    - https://github.com/stenic/k8srestart/releases/download/k8srestart-1.0.1/k8srestart-1.0.1.tgz
+    version: 1.0.1
+generated: "2022-05-29T18:01:20.555156438Z"
