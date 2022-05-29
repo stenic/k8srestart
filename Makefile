@@ -9,7 +9,7 @@ run:
 	docker run -ti -v ~/.kube:/home/nonroot/.kube k8srestart $(ARGS)
 
 debug:
-	go run main.go -v=2
+	go run main.go -v=2 -interval=5
 
 # go-get-tool will 'go get' any package $2 and install it to $1.
 PROJECT_DIR := $(shell dirname $(abspath $(lastword $(MAKEFILE_LIST))))
