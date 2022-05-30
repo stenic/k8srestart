@@ -32,5 +32,5 @@ You can add these Kubernetes annotations to specific service objects to customiz
 
 ```
 docker build -t k8srestart .
-docker run -ti -p 8080:8080 -v ~/.kube:/home/nonroot/.kube k8srestart -interval=5
+docker run -ti -p 8080:8080 -v ~/.kube:/home/nonroot/.kube k8srestart --interval=5 -v=2
 ```
