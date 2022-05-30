@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/stenic/k8srestart/compare/v1.0.2...v2.0.0) (2022-05-30)
+
+
+### Features
+
+* Change annotation ([e695962](https://github.com/stenic/k8srestart/commit/e695962e6828d2fa255c70d8f9c8d7f32747c534))
+
+
+### BREAKING CHANGES
+
+* Annotations must be updated
+
 ## [1.0.2](https://github.com/stenic/k8srestart/compare/v1.0.1...v1.0.2) (2022-05-29)
 
 
