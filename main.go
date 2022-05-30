@@ -25,7 +25,7 @@ import (
 var kubeconfig string
 var namespace string
 var interval int
-var restartSecondsKey = "k8srestart.stenic.io/restart-seconds"
+var restartSecondsKey = "k8srestart.stenic.io/restartAfter"
 var lastRestartKey = "k8srestart.stenic.io/lastRestart"
 
 func init() {

@@ -24,7 +24,7 @@ helm install k8srestart --namespace mynamespace k8srestart/k8srestart
 
 You can add these Kubernetes annotations to specific service objects to customize k8srestart's behaviour.
 
-`k8srestart.stenic.io/restart-seconds`
+`k8srestart.stenic.io/restartAfter`
 (string) Amount of seconds after which the pod/deployment will restart.
 
 
